@@ -1,0 +1,39 @@
+<p><a href="../api">&laquo; back</a></p>
+<form>
+    <legend>YouTube live search</legend>
+    <input class="form-control" type="search" autofocus>
+</form>
+<div class="results"></div>
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.form-control').keyup(function () {
+      var $input = $(this).val();
+      var $keyword= encodeURIComponent($input);
+      var $url='http://gdata.youtube.com/feeds/api/videos?q=' + $keyword + '&format=5&max-results=1&v=2&alt=jsonc';
+      $.ajax({
+        type: 'GET',
+        url: $url,
+        dataType: 'jsonp',
+        success: function (response) {
+          if (response.data.items) {
+            $.each(response.data.items, function (i, data) {
+              var $id = data.id;
+              var $title = data.title;
+              var $views = data.viewCount;
+              var $frame = '<iframe src="http://www.youtube.com/embed/' + $id + '"></iframe>';
+              var $final = '<h4>' + $title + '</h4>' +
+                           '<div>' + $frame + '</div>' +
+                           '<p>' + $views + ' views</p>';
+              $('.results').html($final);
+            });
+          }
+          else {
+            $('.results').html('<p>No videos</div>');
+          }
+        }
+      });
+    });
+  });
+</script>
