@@ -9,7 +9,6 @@ require_once 'up/misc/header.tpl';
 	padding-left: 1%;
 	padding-right: 1%;">
 		<option value="#">RSS</option>
-		<option value="./svet-vina">svet-vina</option>
 		<option value="./cnn-top">cnn-top</option>
 		<option value="./cnn-world">cnn-world</option>
 		<option value="./cnn-africa">cnn-africa</option>
