@@ -1,5 +1,0 @@
-# robots.txt na http://antistereotip.net/0/oprema-za-igraonice/aska/
-User-agent: *
-Disallow: /cgi-bin/
-Disallow: /markup/contact.php
-Sitemap:http://antistereotip.net/0/oprema-za-igraonice/aska/sitemap.xml
