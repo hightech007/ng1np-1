@@ -3,7 +3,7 @@
 defined('ROOT_DIR') or exit('No direct script access allowed');
 
 
-//count pages
+#--------broji_stranice_u_xml_mapi-----------#
 function count_pages() {
   $xmlDoc=new DOMDocument(); 
   $xmlDoc->load("sitemap.xml");
@@ -11,7 +11,7 @@ function count_pages() {
   echo  '(pages: ' . $count . ')';
 }
 
-//nav from xml sitemap - select box
+#--------selektovana_navigacija_iz_xml_mape-----------#
 function nav_xml_htaccess() {
   //dinamic pages
   $pages = simplexml_load_file('sitemap.xml');
@@ -24,7 +24,7 @@ function nav_xml_htaccess() {
     echo "</select></form>";
 }
 
-// loguje ip adrese
+#--------loguje_ip_adrese-----------#
 function ip_log() {
  $ip = '<p>IP <b>'.$_SERVER['REMOTE_ADDR'].'</b></p>'.'<p>date <b>'. date("Y-m-d").' </b></p>'; 
 echo $ip . '<br />';
@@ -32,6 +32,7 @@ echo $ip . '<br />';
 $file = fopen ('_set/logs/ip.log', 'a'); fputs($file, $ip . ' | NEXT | '); 
 }
 
+#--------okruzenje-----------#
 function tnv() {
 	echo "PHP_SELF : " . $_SERVER['PHP_SELF'] . "<br />"; 
 	echo "GATEWAY_INTERFACE : " . $_SERVER['GATEWAY_INTERFACE'] . "<br />"; 
@@ -73,12 +74,7 @@ function tnv() {
 	echo "ORIG_PATH_INFO : " . $_SERVER['ORIG_PATH_INFO'] . "<br />"; 
 }
 
-//function extractCommonWords($string) is in antistereotip.net/1/dev/
-
-
-
 #--------mikro_data_google_seo-----------#
-
 function mikro_blog($klasa, $naslov, $h1, $img, $desc, $veza, $url)
 {
 echo '<article itemscope itemtype="http://data-vocabulary.org/Organization" class="'.$klasa.'">
@@ -89,7 +85,6 @@ echo '<article itemscope itemtype="http://data-vocabulary.org/Organization" clas
 }
 
 #--------Iscitaj_fajlove_u_direktorijumu_kao_listu---#
-
 function PreuzmiListuFajlova($Direktorijum) {
 
   $VratiVrednost = array();
@@ -120,7 +115,6 @@ function PreuzmiListuFajlova($Direktorijum) {
 }
 
 #--------kompresuj_stranicu---------#
-
 function KompresujStranu($Baferuj) {
   $Pretrazi = array(
         '/\>[^\S ]+/s',  // ocisti razmake izmedju tagova, izuzev spejsa
@@ -135,8 +129,7 @@ function KompresujStranu($Baferuj) {
   return preg_replace($Pretrazi, $Zameni, $Baferuj);
 }
 
-#--------COUNT_NUMBER_OF_FILES_IN_DIRECTORY---------#
-
+#--------broji_fajlove_u_direktorijumu---------#
 function BrojiFajlove($Direktorijum) {
   $i = 0;
 
@@ -151,22 +144,21 @@ function BrojiFajlove($Direktorijum) {
 }
 
 #--------drzi_input_sigurnim---------#
-
 function ObezbediInput($Sigurno) {
 	$Sigurno = mysql_escape_string(trim($Sigurno));
 	return strip_tags(htmlentities($Sigurno));
 }
 
 
-
+#--------referentni_statisticki_log---------#
 function ref_statistic_log() {
-$ip = $_SERVER['REMOTE_ADDR'];
-$pagina = $_SERVER['REQUEST_URI'];
-$datum = date("d-m-y / H:i:s");
-$invoegen = $datum . " - " . $ip . " - " . $pagina . "<br />";
-$fopen = fopen("_set/logs/ip.html", "a");
-fwrite($fopen, $invoegen);
-fclose($fopen);
+	$ip = $_SERVER['REMOTE_ADDR'];
+	$pagina = $_SERVER['REQUEST_URI'];
+	$datum = date("d-m-y / H:i:s");
+	$invoegen = $datum . " - " . $ip . " - " . $pagina . "<br />";
+	$fopen = fopen("_set/logs/ip.html", "a");
+	fwrite($fopen, $invoegen);
+	fclose($fopen);
 }
 
 
