@@ -1,6 +1,7 @@
 <?php
 //pages
 require_once '_set/php/tpl.php';
+
 $eng = new ng1np();
 
 //variables
@@ -8,64 +9,54 @@ $eng->charset = 'utf-8';
 $eng->css = '_set/css/stil.php';
 
 //meta
-$eng->key = 'default, hyper default, shell, engine, fast, secure, programming, 
-assets, web, forms, ng1np';
-$eng->desc = 'description of ng1np - engine up with hyper shell';
 
-$eng->page = 'home';
-$eng->title = 'Ng1np';
-$eng->logo = 'media/up.png';
+$eng->desc = 'Ng1np is hypershell idea for hyper productivity, based on hyperloop and implementation of services based on Windows and GNU/Linux operating systems ...';
+$eng->key = 'hyperloop, hyper shell, engine, fast, secure, programming, web, ng1np, gnu/linux, debian, OS, Windows, services, servers, unix';
 
-$eng->header_h1 = 'Engine <span>Up</span>';
-$eng->header_h2 = 'Open Source Engine'; 
+$eng->page = 'default';
+$eng->title = 'Default - AntiStereotip';
+$eng->logo = 'media/antistereotip.svg';
+$eng->logo_width = '70';
+$eng->logo_height = '70';
+
+$eng->header_h1 = 'Anti <span class="ex8">Stereotip</span>';
+$eng->header_h2 = '<span class="ex8">Powered by Engine UP [Made on Debian Jessie]</span>'; 
 
 $eng->acc = array( 
 	array(  
 	"ac" => "ac-1",
 	"acc" => "accordion-1",
-	"acl" => "What is Engine Up",
-	"acp" => '3Ngin3^UP » ng1np ® « is open source engine based on flexibility, security, simplicity. Engine-UP is hyper shell productivity engine for super port locked machines. Ng1np is hypershell idea for hyper productivity, based on hyperloop.'
+	"acl" => "What is AntiStereotip ?",
+	"acp" => 'Antistereotip is web3.0 AI platform. <br />Contact Us for more information on <strong> antistereotip [ at ] gmx [ dot ] com </strong>'
 	),
-        array( 
-        "ac" => "ac-2",
+	array(  
+	"ac" => "ac-2",
 	"acc" => "accordion-2",
-	"acl" => "Tehnniques",
-	"acp" => "html5, css3, php, fs."
-        ),
+	"acl" => "What is Ng1np ? What We Do ?",
+	"acp" => '3Ngin3^UP » ng1np ® « is open source engine based on flexibility, security, simplicity. Engine-UP is hyper shell productivity engine for super port locked machines. Ng1np is hypershell idea for hyper productivity, based on hyperloop. Implementation of services based on Windows and GNU/Linux operating systems: DNS, DHCP, Samba, FTP, VPN. cherokee server, nginx server, apache server, gwan, lighttpd, WAMP,MAMP, XAMPP, LAMP, LEMP, audio stream-gnump3d, unrealircd irc server, ngircd irc server, pybot for rss, php-rss...'
+	),
 	array( 
         "ac" => "ac-3",
 	"acc" => "accordion-3",
-	"acl" => "What is Idea",
-	"acp" => "Idea is super UI and UX engine. Ng1np UI is based on psilosophy of colors and perception. We work on connection with sevices and API's. "
+	"acl" => "Vision and Idea",
+	"acp" => "Hypershell for bilion sites. Ultrafast engine for hyper perception. Extended API for fast livesearch and data exchange. Idea is super UI and UX engine. Ng1np UI is based on psilosophy of colors and perception. We work on connection with sevices and API's."
         ),
 	array( 
         "ac" => "ac-4",
 	"acc" => "accordion-4",
-	"acl" => "Vision",
-	"acp" => "Hypershell for milions sites. Ultrafast engine for hyper perception. Extended API for fast livesearch and data exchange."
+	"acl" => "Engine Possibility's",
+	"acp" => "ng1np :: filesistem engine :: mirror tech :: url rewrite :: cache :: pso :: css3 :: html5 :: array data :: xml data exchange :: livesearch"
         ),
 	array( 
         "ac" => "ac-5",
 	"acc" => "accordion-5",
-	"acl" => "The team",
-	"acp" => "All thanks to WS1 team. We work hard on some UI and UX concepts. We expect from You to respect Our work."
-        ),
-	array( 
-        "ac" => "ac-6",
-	"acc" => "accordion-6",
-	"acl" => "Why Should You Use Ng1np ?",
-	"acp" => "Because it's fast. Ng1np is secure, simple, flexibile."
-        ),
-	array( 
-        "ac" => "ac-7",
-	"acc" => "accordion-7",
-	"acl" => "Creator of Ng1np",
-	"acp" => "Ceo & Founder of Engine Up is hightech(Milutin Gavrilovic). All thanks to WS1 team (ZDroid, vladap, Gaddafi, kgb, ludus, nemysis)."
+	"acl" => "The Team",
+	"acp" => "Ceo & Founder of Engine Up - Ng1np is hightech (Milutin Gavrilović). <br />All thanks to WS1 team (ZDroid, vladap, Gaddafi, kgb, ludus, nemysis). We work hard on some UI and UX concepts. We expect from You to respect Our work. All thanks to WS1 team "
         )
  );
 
 
-$eng->footer = '<!-- <img src="media/html5.png" width="32" height="32" /><img src="media/php.png" width="32" height="32" /><img src="media/css3.png" width="32" height="32" /> -->';
+//$eng->footer = '';
 
 
 //render page

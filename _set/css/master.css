@@ -13,15 +13,19 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	margin:0;
 	padding:0;
 }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block;
+}
 html,body {
 	margin:0;
 	padding:0;
 }
+
 table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img { 
+fieldset,img,iframe { 
 	border:0;
 }
 input{
@@ -30,6 +34,7 @@ input{
 	color:#979797;
 	width:190px;
 }
+
 address,caption,cite,code,dfn,th,var {
 	font-style:normal;
 	font-weight:normal;
@@ -51,14 +56,23 @@ abbr,acronym { border:0;
 }
 /* General Style */
 body{
-	/*font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;*/
-	font-family: 'WOL_Reg','Segoe UI',Tahoma,Helvetica,sans-serif;
-	background: #fff;
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	/* font-family: 'WOL_Reg','Segoe UI',Tahoma,Helvetica,sans-serif; */
+        background: #fff;
 	font-weight: 400;
 	font-size: 15px;
 	color: #000;
 	overflow-y: scroll;
 }
+
+.btn-start-chat {
+  font-size: 26px !important;
+  padding: 8px 5px !important;
+}
+.brought-to-you-by {
+  display:none !important;
+}
+
 .ie7 body{
 	overflow:hidden;
 }
@@ -119,9 +133,9 @@ section a:hover {color: #000;}
 .right-art {width:38%;float:right;padding:1%; text-align:left;margin-bottom:1%;}
 
 .rss{
-	width: /* 400px */ 60%;
-	margin: 10px auto 62px auto;
-	text-align: left;
+	width: /* 400px */ 80%;
+	margin: 30px auto 120px auto;
+	text-align:justify;
 }
 
 .button {padding:0.4%;padding-left:1%;padding-right:1%;}
@@ -161,11 +175,25 @@ section a:hover {color: #000;}
 	float: none;
 	display: inline;
 }
-footer {
+footer { background:#444; color:#fff;
 	z-index:1001;
 	width: 100%; 
 	bottom:0px; 
 	position:fixed;
 }
 
+form select {padding:0.5%;}
+
+.wapi legend {width:98%;padding:1%;margin:0;}
+.wapi input {width:58%;padding:1%;margin:0 auto;}
+ 
+#livesearch a:hover {color:orangered;}
+
+#sthoverbuttons #sthoverbuttonsMain {
+  border: none !important;
+  position: relative !important;
+  z-index: 1000000 !important;
+  width: 30px !important;
+  padding: 8px !important;
+}
 

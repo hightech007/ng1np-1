@@ -41,3 +41,18 @@ document.createElement("header");
 document.createElement("hgroup");
 document.createElement("nav");
 
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+function cs()
+	{document.body.style.background="#dcdcdc";}
+function cs2()
+	{document.body.style.background="#212121";}
+function capitalize()
+	{document.getElementById("cap").style.textTransform="capitalize";}
+

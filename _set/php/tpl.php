@@ -1,5 +1,7 @@
 <?php
 
+defined('ROOT_DIR') or exit('No direct script access allowed');
+ 
 //ng1np class for page rendering and templating
 class ng1np {
 

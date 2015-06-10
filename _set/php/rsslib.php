@@ -1,4 +1,7 @@
 <?php
+
+defined('ROOT_DIR') or exit('No direct script access allowed');
+
 /*
 	RSS Extractor and Displayer
 	(c) 2007-2010  Scriptol.com - Licence Mozilla 1.1.

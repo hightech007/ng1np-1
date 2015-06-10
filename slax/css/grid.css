@@ -1,0 +1,41 @@
+.grid { position: relative; width: 800px; margin: 0 auto; padding: 0; margin-top: 10px;}
+.grid .kol {float: left; display: inline;}
+.grid .cetiri.kol {width: 200px; float: left; text-align: left; opacity:0.7;  filter:alpha(opacity=300); }
+.grid .pet.kol {width: 250px;}
+.grid .sest.kol {width: 300px;}
+.grid .sedam.kol {width: 350px; }
+.grid .osam.kol {width: 400px; }
+.grid .devet.kol {width: 450px;}
+.grid .deset.kol {width: 500px;}
+.grid .jedanest.kol {width: 550px;}
+.grid .dvanest.kol {width: 600px;}
+.grid .trinest.kol {width: 650px;}
+.grid .cetrnest.kol {width: 700px;}
+.grid .petnest.kol {width: 750px; }
+.grid .sesnest.kol {width: 800px; text-align: left; float: left; background-image: url("back.jpg"); color: white; border: 1px solid #414141; margin-bottom: 10px;}
+.grid .sedamnest.kol {width: 850px; }
+.grid .osamnest.kol {width: 900px; }
+.grid .devetnest.kol {width: 950px; }
+.grid .dvadeset.kol {width: 1000px; }
+
+
+.grid .sesnest.kol nav{height: auto; float: left; color: white;  text-align: left; width: 100%; text-align: center;}
+
+.grid .sesnest.kol nav {height: auto; float: left; color: white;  text-align: left; width: 100%; text-align: center;}
+.grid .sesnest.kol nav ul {list-style-type: none; display: inline;}
+.grid .sesnest.kol nav ul li { display: inline;  width: 160px; float: left; }
+.grid .sesnest.kol nav ul li a {width: 96%; padding: 2%; float: left;  text-decoration: none; color: yellow;}
+.grid .sesnest.kol nav ul li a:hover {background: black; color: orange;}
+
+.grid .sesnest.kol p {width: 94%; padding: 3%; }
+.grid .sesnest.kol h2 {width: 94%; padding: 3%; color: yellow; text-align: center;  font-size: 25px;}
+.grid .sesnest.kol h2 span {color: orangered; }
+.grid .sesnest.kol h3 {width: 94%; padding: 3%; color: lightblue; text-align: center;}
+.grid .sesnest.kol ul {list-style-type: none; padding: 1%;}
+.grid .sesnest.kol code {width: 98%; border: 1px solid #17f118; padding: 1%; float: left; background: black; color: #17f118;}
+
+.grid .sesnest.kol a { text-decoration: none; color: orange; font-size: 18px;}
+.grid .sesnest.kol a:hover {color: orangered; }
+
+
+

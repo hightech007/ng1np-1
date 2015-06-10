@@ -1,5 +1,5 @@
 <?php
-$css = array("lightbox.css","master.css", "ac.css", "circles.css", "queries.css");
+$css = array("master.css", "acc.css", "anm.css", "qrs.css");
 $bffr = "";
 foreach ($css as $cs) { $bffr .= file_get_contents($cs); }
 $bffr = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $bffr);

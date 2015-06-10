@@ -1,25 +1,50 @@
 <?php
-
+define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
+require_once(ROOT_DIR .'_set/php/fnc.php');
+ref_statistic_log();
 //router
 $route = $_GET['route'];
+
 //allowed pages
 $standard = array (
-'default'   => './lib/default.php',
-'news'   => './lib/news.php',
-'video-chat'   => './lib/video-chat.php'
+'default' => './lib/default.php',
+'video-chat' => './lib/video-chat.php',
+'api' => './lib/api.php',
+'wapi' => './lib/wapi.php',
+'live-search' => './lib/live-search.php',
+'contact-form' => './lib/contact-form.php'
+);
+
+$ext = array (
+'social' => './lib/social.php',
+'external-sources' => './lib/external-sources.php'
 );
 
 $news = array (
-'svet-vina'   => './lib/svet-vina.php',
-'cnn-top'   => './lib/cnn-top.php',
-'cnn-world'   => './lib/cnn-world.php',
-'cnn-africa'   => './lib/cnn-africa.php',
-'bbc-top'   => './lib/bbc-top.php',
-'rts-vesti'   => './lib/rts-vesti.php'
+'news' => './lib/news/news.php',
+'cnn-top' => './lib/news/cnn-top.php',
+'cnn-world' => './lib/news/cnn-world.php',
+'cnn-africa' => './lib/news/cnn-africa.php',
+'bbc-top' => './lib/news/bbc-top.php',
+'rss' => './lib/news/rss.php'
+);
+
+
+
+$servers = array (
+'servers' => './lib/servers.php',
+'tcp-ip-networking' => './lib/serve/tcp-ip-networking.php',
+'ternary-operater-php' => './lib/programming/ternary-operater-php.php',
+'hosting' => './lib/hosting.php',
+'nginx' => './lib/serve/nginx.php',
+'ngircd' => './lib/serve/ngircd.php',
+'gwan' => './lib/serve/gwan.php',
+'cherokee' => './lib/serve/cherokee.php',
+'hiawata' => './lib/serve/hiawata.php',
+'hunchentoot' => './lib/serve/hunchentoot.php'
 );
 	
-$pages = $standard + $news; 
-
+$pages = $standard + $ext + $news + $servers; 
 
 if( (strlen($pages[$route]) > 0) && (in_array($pages[$route], $pages)) ){
 	
@@ -44,6 +69,6 @@ if( (strlen($pages[$route]) > 0) && (in_array($pages[$route], $pages)) ){
 	ob_end_flush(); 
 	//end cache block down --------------------------------------------------------
 	
-} else { require 'lib/default.php'; }
+} else { require_once(ROOT_DIR .'lib/default.php'); }
 	
 ?>

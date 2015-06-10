@@ -1,4 +1,7 @@
 <?php
+
+
+
 $xmlDoc=new DOMDocument();
 $xmlDoc->load("../../sitemap.xml");
 

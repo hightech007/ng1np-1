@@ -1,0 +1,273 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, 
+var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, 
+nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; 
+font-size: 100%; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+body {background-image: url("pat4.png"); margin: 0 auto; width: 900px;  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+font-size: 100%; text-align: left; margin-top: 1%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%;}
+
+.withfadeout {
+-webkit-transition: all 2s ease-in-out;
+-moz-transition: all 2s ease-in-out;
+-ms-transition: all 2s ease-in-out;
+-o-transition: all 2s ease-in-out;
+transition: all 2s ease-in-out;
+}
+.withfadeout:hover {
+-webkit-opacity: 0.25;
+-moz-opacity: 0.25;
+opacity: 0.25;
+}
+
+.holder {
+position: relative;
+width: 100%; 
+padding: 0; 
+float: left;
+}
+
+header {
+
+width: 98.5%; padding: 0.5%;
+height: 150px; 
+float: left; clear: both;
+margin-bottom: 1%; 
+background-image: url("back.jpg");
+border-top: 1px solid #212121; 
+border-left: 1px solid #313131;
+border-right: 1px solid #313131;
+border-bottom: 1px solid #212121;
+}
+
+header h1 {width: 65%; float: left; height:auto; padding: 2%; text-align: center; color: white;
+font-size: 3.1em;font-family: 'Bigelow Rules', cursive; text-shadow: 1px 1px 9px black;}
+#l{color: lightgreen;} 
+#d{color: lightblue;}
+#dl{color: orangered; font-size: 0.7em;}
+#dd{color: yellow; font-size: 0.7em;}
+#dc{font-size: 0.7em;}
+header img {
+width:50px; 
+height:auto;
+padding: 1%; float: right;
+}
+
+header #kursna {width: 120px; height: 90px; float: left; margin: 2%;
+border-top: 1px solid white; 
+border-bottom: 1px solid #313131;
+border-left: 1px solid #313131;
+border-right: 1px solid #313131;
+background: #818181; opacity:0.9; filter:alpha(opacity=300); padding:1%;}
+.navigacija nav {position: relative;
+width: 97.5%; padding: 1%;
+height: 40px;  padding-top: 10px;
+float: left; 
+margin-bottom: 5px; 
+background-image: url("back.jpg");
+border-top: 1px solid #212121; 
+border-left: 1px solid #313131;
+border-right: 1px solid #313131;
+border-bottom: 1px solid #212121;}
+.navigacija nav ul {list-style-type: none; display: inline;}
+.navigacija nav ul li {display: inline;}
+.navigacija nav ul li a {color: yellow; text-decoration: none; font-size: 19px;  text-shadow: 0px 0px 15px white; padding: 1%; }
+.navigacija nav ul li a:hover {background: black;}
+
+.navigacija #flags {width: 20%; float: right; text-align: right; margin-right: 10px; margin-bottom: 1%; padding-top: 1%;}
+.navigacija #flags li {display: inline; padding-left: 2%;}
+.navigacija #flags li a {float: right;}
+.navigacija #flags li a:hover {border-bottom: 1px solid yellow;}
+.navigacija #flags li a img {width: 20px;}
+
+article {position: relative; width: 98.5%; padding: 0.5%;  height: auto; float: left; color: white; margin-top: 5px;
+border-top: 1px solid #313131; 
+border-left: 1px solid #313131;
+border-right: 1px solid #313131;
+border-bottom: 1px solid #212121;
+}
+
+
+article .blog {width: 100%; float: left; background-image: url("back.jpg"); position: relative;}
+article .blog b {color: yellow;}
+article .blog #levo {width: 28%; padding: 1%; float: left;}
+article .blog #levo h2 {
+color: #00d0ff; font-size: 1.4em; width: 98%; padding: 1%; float: left; text-shadow: 0px 0px 2px #717171;}
+article .blog #levo h3 {
+color: #FF3300; font-size: 1.3em; width: 98%; padding: 1%; float: left; text-shadow: 0px 0px 2px #717171;}
+article .blog #levo p {color: white; font-size: 13px; width: 98%; padding: 1%; float: left;}
+article .blog #levo p a {color: yellow;}
+article .blog #levo p b {color: lightgreen;}
+article .blog #levo quote {color: lightblue; font-style: italic;}
+
+article .blog #cela {width: 98%; padding: 1%; float: left; position: relative;}
+article .blog #cela p {width: 98%; padding: 1%; float: left; }
+article .blog #cela p a {color: lightgreen; padding: 1%; font-size: 1.2em;}
+article .blog #cela p a:hover {color: orange;}
+article .blog #cela img {padding: 1%; width: 95px;
+-moz-box-shadow: 0px 0px 20px #535151; 
+-webkit-box-shadow: 0px 0px 20px #535151; 
+box-shadow: 0px 0px 20px #535151;}
+article .blog #cela img:hover{
+-moz-box-shadow: 0px 0px 10px yellow; 
+-webkit-box-shadow: 0px 0px 10px yellow; 
+box-shadow: 0px 0px 10px yellow;}
+
+article .blog #jednapolovina {width: 47.5%; height: 250px; margin-left: 0.3%; margin-bottom: 1%; padding: 1%; float: left; opacity:0.7; background: #313131; filter:alpha(opacity=300);}
+article .blog #dvepolovine {width: 47.5%; height: 250px; margin-left: 0.3%; margin-bottom: 1%; padding: 1%; float: left; opacity:0.7; background: #313131; filter:alpha(opacity=300);}
+
+article .blog #jednapolovina:hover, article .blog #dvepolovine:hover {
+opacity:0.7; background: #212121; filter:alpha(opacity=300);}
+
+
+article .blog #jednapolovina a {color: yellow;} article .blog #jednapolovina b {color: lightblue;}
+article .blog #dvepolovine a {color: yellow;} article .blog #dvepolovine b {color: lightblue;}
+article .blog #prvatrecina {width: 31%; height: 350px;  padding: 1%; float: left;  margin-left: 0.3%; opacity:0.7; background: #313131; filter:alpha(opacity=300);}
+article .blog #drugatrecina {width: 31%; height: 350px; padding: 1%; float: left;  margin-left: 0.3%; opacity:0.7; background: #313131; filter:alpha(opacity=300);}
+article .blog #trecatrecina {width: 31%; height: 350px; padding: 1%; float: left;  margin-left: 0.3%; opacity:0.7; background: #313131; filter:alpha(opacity=300);}
+
+article .blog #prvatrecina:hover, article .blog #drugatrecina:hover, article .blog #trecatrecina:hover {
+opacity:0.7; background: #212121; filter:alpha(opacity=300);}
+
+article .blog #prvatrecina b {color: yellow;}
+article .blog #prvatrecina p, article .blog #drugatrecina p, article .blog #trecatrecina p {font-size: 14px;} 
+
+article .blog #drugatrecina b {color: yellow;} 
+article .blog #drugatrecina a {color: #41ff66;} 
+article .blog #drugatrecina h2 {color: orange; font-size: 1.3em; width: 98%; padding: 1%;  padding-bottom: 2%; float: left;}
+article .blog #drugatrecina h3 {color: green; font-size: 1.2em; width: 98%; padding: 1%;  padding-bottom: 2%; float: left;}
+
+
+article .blog #trecatrecina b {color: lightgreen;}
+article .blog #prvatrecina h3, article .blog #drugatrecina h3, article .blog #trecatrecina h3 {color: #00d0ff; font-size: 1.4em; width: 98%; padding: 1%; float: left; text-shadow: 0px 0px 2px #717171;}
+.blog #prvatrecina, .blog #drugatrecina, .blog #trecatrecina {border-top: 1px solid #414141; margin-top: 5px;}
+article .blog #prvatrecina img, article .blog #drugatrecina img, article .blog #trecatrecina img
+{padding: 1%; -moz-box-shadow: 0px 0px 20px #535151; -webkit-box-shadow: 0px 0px 20px #535151; box-shadow: 0px 0px 20px #535151;}
+article .blog #prvatrecina img, .blog #trecatrecina img {width: 100px;}
+article .blog #prvatrecina img:hover, article .blog #drugatrecina img:hover, article .blog #trecatrecina img:hover {
+-moz-box-shadow: 0px 0px 10px yellow; 
+-webkit-box-shadow: 0px 0px 10px yellow; 
+box-shadow: 0px 0px 10px yellow;}
+.blog #drugatrecina img {width: 100px; }
+article .blog #desno {width: 68%; padding: 1%; float: left;}
+article .blog #desno iframe {
+width: 96%; 
+padding: 2%; 
+float: left; 
+height: 500px;
+-moz-box-shadow: 0px 0px 20px #535151; 
+-webkit-box-shadow: 0px 0px 20px #535151; 
+box-shadow: 0px 0px 20px #535151;
+}
+
+article .blog #galerija {width: 98%; padding: 1%; float: left;}
+article .blog #galerija iframe {width: 100%; height: 650px;}
+
+#zuta {color: #9acd32; border-bottom: 2px solid #9acd32;}
+#svetlozelena {color: #00d0ff; border-bottom: 2px solid #00d0ff; }
+#oranzcrvena {color: orangered; border-bottom: 2px solid orangered;}
+#crvena {color: red; border-bottom: 2px solid red;}
+
+
+article .blog #kontakt {width: 48%; padding: 1%; float: left;}
+article .blog #kontakt a {color: yellow;}
+article .blog #kontakt h2 {color: #00d0ff; font-size: 1.4em; width: 98%; padding: 1%; float: left; text-shadow: 0px 0px 2px #717171;}
+article .blog #kontakt h3 {color: #FF3300; font-size: 1.3em; width: 98%; padding: 1%; float: left; text-shadow: 0px 0px 2px #717171;}
+article .blog #kontakt p {color: white;  font-size: 1em; width: 98%; padding: 1%; float: left; text-shadow: 0px 0px 2px #717171;}
+article .blog #kontakt b {color: yellow;}
+
+/*
+#dugme:hover {opacity:0.7;  filter:alpha(opacity=300); background-color: #313131; }
+*/
+
+footer {width: 99.5%; float: left; color: palegoldenrod;text-align: left;  
+opacity:0.7;  filter:alpha(opacity=300);  background-image: url("back.jpg");
+border-top: 1px solid #414141;
+border-left: 1px solid #313131;
+border-right: 1px solid #313131;
+border-bottom: 1px solid #212121; margin-top:1%;}
+footer a {color: yellow; text-shadow: 0px 0px 15px black; }
+
+footer p {font-size: 13px; width: 98%; padding: 1%; text-shadow: 0px 0px 15px black; }
+
+#dugme {float: right; width: 90px; height: 90px;  border-left: 1px solid #414141; border-top: 1px solid #414141; border-bottom: 1px solid #414141;
+opacity:0.9;  filter:alpha(opacity=300); background-color: #212121; float: left;}
+
+#dugme:hover {opacity:0.7;  filter:alpha(opacity=300); background-color: #313131; }
+
+#ex7 { width: 100%; border-bottom: 1px solid #414141;  border-top: 1px solid #414141;  background: #111; height: auto; line-height: 15px; color: transparent; font-size: 30px; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; float: left;  font-weight: 300;  -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; } #ex7 p { background: #111; }
+#ex7:hover { line-height: 100px; color: #575858;}   
+#ex7 img{ float: left; margin: 10px; }
+
+#ex8 {
+
+-webkit-animation: cssAnimation 1s 1 ease;
+-moz-animation: cssAnimation 1s 1 ease;
+-o-animation: cssAnimation 1s 1 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(0deg) scale(0.100) skew(0deg) translate(0px); }
+to { -webkit-transform: rotate(0deg) scale(0.999) skew(0deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(0deg) scale(0.100) skew(0deg) translate(0px); }
+to { -moz-transform: rotate(0deg) scale(0.999) skew(0deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(0deg) scale(0.100) skew(0deg) translate(0px); }
+to { -o-transform: rotate(0deg) scale(0.999) skew(0deg) translate(0px); }
+}
+
+.dugme { margin-top: 10px; width: 99px; height: 99px; float: left; overflow: hidden; 
+position: relative; text-align: center; cursor: default;}
+
+.dugme .maska,.dugme .sadrzaj {width: 99px; height: 99px; position: absolute; overflow: hidden; top: 0; left: 0;}
+
+.dugme img {display: block; position: relative; width: 99px; height: 99px;}
+
+.dugme h2 {text-transform: uppercase; color: #fff;  text-align: center; position: relative;
+font-size: 14px; padding-top: 10px; background: rgba(0, 0, 0, 0.8); margin-top: 10px;}
+
+.dugme a.info {font-size: 11px; display: inline-block; text-decoration: none; background: #000;
+color: #17f118; -webkit-box-shadow: 0 0 1px #000; -moz-box-shadow: 0 0 1px #000; box-shadow: 0 0 1px #000;}
+
+.dugme a.info: hover {-webkit-box-shadow: 0 0 5px #000; -moz-box-shadow: 0 0 5px #000; box-shadow: 0 0 5px #000;}
+
+.dugme-iko img {-webkit-transition: all 0.4s ease-in-out 0.5s; -moz-transition: all 0.4s ease-in-out 0.5s;
+-o-transition: all 0.4s ease-in-out 0.5s; -ms-transition: all 0.4s ease-in-out 0.5s; transition: all 0.4s ease-in-out 0.5s;}
+
+.dugme-iko .maska {background-color: rgba(5,5,5,0.5); -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0); opacity: 0; -webkit-transition: all 0.3s ease-in 0.4s; -moz-transition: all 0.3s ease-in 0.4s;
+-o-transition: all 0.3s ease-in 0.4s; -ms-transition: all 0.3s ease-in 0.4s; transition: all 0.3s ease-in 0.4s;}
+
+.dugme-iko h2 {-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0;
+background: transparent; -webkit-transform: scale(10); -moz-transform: scale(10); -o-transform: scale(10); -ms-transform: scale(10);
+transform: scale(10); -webkit-transition: all 0.3s ease-in-out 0.1s; -moz-transition: all 0.3s ease-in-out 0.1s;
+-o-transition: all 0.3s ease-in-out 0.1s; -ms-transition: all 0.3s ease-in-out 0.1s; transition: all 0.3s ease-in-out 0.1s;}
+
+.dugme-iko a.info {-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0;
+-webkit-transform: translateY(100px); -moz-transform: translateY(100px); -o-transform: translateY(100px); -ms-transform: translateY(100px);
+transform: translateY(100px); -webkit-transition: all 0.3s ease-in-out 0.1s; -moz-transition: all 0.3s ease-in-out 0.1s;
+-o-transition: all 0.3s ease-in-out 0.1s; -ms-transition: all 0.3s ease-in-out 0.1s; transition: all 0.3s ease-in-out 0.1s;}
+
+.dugme-iko:hover .maska {-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=200); opacity: 1;
+-webkit-transition-delay: 0s; -moz-transition-delay: 0s; -o-transition-delay: 0s; -ms-transition-delay: 0s; transition-delay: 0s;}
+
+.dugme-iko:hover img {-webkit-transition-delay: 0s; -moz-transition-delay: 0s; -o-transition-delay: 0s;
+-ms-transition-delay: 0s; transition-delay: 0s;}
+
+.dugme-iko:hover h2 {-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=200); opacity: 1;
+-webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1);
+-webkit-transition-delay: 0.1s; -moz-transition-delay: 0.1s; -o-transition-delay: 0.1s; -ms-transition-delay: 0.1s; transition-delay: 0.1s;}
+
+.dugme-iko:hover a.info {-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=200); opacity: 1;
+-webkit-transform: translateY(0px); -moz-transform: translateY(0px); -o-transform: translateY(0px); -ms-transform: translateY(0px);
+transform: translateY(0px); -webkit-transition-delay: 0.3s; -moz-transition-delay: 0.3s; -o-transition-delay: 0.3s;
+-ms-transition-delay: 0.3s; transition-delay: 0.3s;}
+
+
+
+

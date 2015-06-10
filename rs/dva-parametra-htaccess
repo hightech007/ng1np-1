@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteEngine ^kategorija/([^/]*)/?(.*)$ index.php?cat=$1&id=$2

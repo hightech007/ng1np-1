@@ -9,20 +9,18 @@ $eng->charset = 'utf-8';
 $eng->css = '_set/css/stil.php';
 
 //meta
-$eng->key = 'default, hyper default, shell, engine, fast, secure, programming, 
-assets, web, forms, ng1np';
-$eng->desc = 'description of ng1np - engine up with hyper shell';
+$eng->key = 'P2P, PeerToPeer, Video chat, video, chat, google video chat service, nodeJS, webcam, one2one';
+$eng->desc = 'Peer2peer chat is a one2one (person to person) webcam video chat using nodeJS for meeting connection. It is similar to google video chat service.';
 
-$eng->page = 'news';
-$eng->title = 'News - RSS';
-$eng->logo = 'media/up.png';
+$eng->page = 'video-chat';
+$eng->title = "Antistereotip's Video Chat";
+$eng->logo = 'media/video-chat.png';
 
-$eng->header_h1 = 'VIDEO <span>CHAT</span>'; 
+$eng->header_h1 = 'VIDEO <span class="ex8">CHAT</span>'; 
+$eng->header_h2 = '<span class="ex8">Peer2Peer Video Chat</span>';
 
 
-
-$eng->footer = '<!-- <img src="media/html5.png" width="32" height="32" /><img src="media/php.png" width="32" height="32" /><img src="media/css3.png" width="32" height="32" /> -->';
-
+//$eng->footer = '';
 
 //render page
 echo $eng->render('up/video-chat.tpl');
