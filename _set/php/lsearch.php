@@ -1,7 +1,5 @@
 <?php
 
-
-
 $xmlDoc=new DOMDocument();
 $xmlDoc->load("../../sitemap.xml");
 
@@ -40,7 +38,6 @@ for($i=0; $i<($x->length); $i++)
     }
   }
 }
-
 
 if ($hint=="")
   {
