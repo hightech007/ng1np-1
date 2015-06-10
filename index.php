@@ -2,10 +2,11 @@
 define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
 require_once(ROOT_DIR .'_set/php/fnc.php');
 ref_statistic_log();
-//router
+
+#--------ruter-----------#
 $route = $_GET['route'];
 
-//allowed pages
+#--------dozvoljene_stranice-----------#
 $standard = array (
 'default' => './lib/default.php',
 'video-chat' => './lib/video-chat.php',
@@ -29,8 +30,6 @@ $news = array (
 'rss' => './lib/news/rss.php'
 );
 
-
-
 $servers = array (
 'servers' => './lib/servers.php',
 'tcp-ip-networking' => './lib/serve/tcp-ip-networking.php',
@@ -43,12 +42,13 @@ $servers = array (
 'hiawata' => './lib/serve/hiawata.php',
 'hunchentoot' => './lib/serve/hunchentoot.php'
 );
-	
+
+#--------sabrani_nizovi-----------#	
 $pages = $standard + $ext + $news + $servers; 
 
 if( (strlen($pages[$route]) > 0) && (in_array($pages[$route], $pages)) ){
 	
-	//cache -----------------------------------------------------------------------
+	#--------kesh-----------#
 	$interval = 30 * 60;
 	$filename = "cache/".basename(rtrim($_SERVER["REQUEST_URI"],'/')).".cache";
 	if (file_exists($filename) && (time() - $interval) < filemtime($filename)) {
@@ -56,12 +56,12 @@ if( (strlen($pages[$route]) > 0) && (in_array($pages[$route], $pages)) ){
 		exit(); 
 	}
 	ob_start(); 
-	//end cache block -------------------------------------------------------------
+	#--------kraj_kesh_bloka-----------#
 
 	//require page out of cache
 	require $pages[$route];
 
-	//cache block down ------------------------------------------------------------
+	#--------donji_kesh_blok-----------#
 	$bffr = ob_get_contents(); 
 	$file = fopen($filename,'w');
 	fwrite($file, $bffr);
