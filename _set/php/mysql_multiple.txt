@@ -1,0 +1,259 @@
+<?php
+#--- inner_join.php ---#
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Using Inner Join</title>
+<style>
+table,td,th
+{
+	padding:10px;
+	border-collapse:collapse;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border:solid #ddd 2px;
+}
+</style>
+</head>
+<body>
+<table align="center" border="1" width="100%">
+<tr>
+<th>ID</th>
+<th>DATA</th>
+<th>Category ID</th>
+<th>Category</th>
+</tr>
+<?php
+mysql_connect("localhost","user","pass");
+mysql_select_db("dbname");
+$res=mysql_query("SELECT c.* , d.* FROM serp_categories c INNER JOIN serp_data d ON c.cat_id=d.search_id");
+while($row=mysql_fetch_array($res))
+{
+	?>
+    <tr>
+    <td><p><?php echo $row['id']; ?></p></td>
+    <td><p><?php echo $row['data']; ?></p></td>
+    <td><p><?php echo $row['cat_id']; ?></p></td>
+    <td><p><?php echo $row['category']; ?></p></td>
+    </tr>
+    <?php
+}
+?>
+</table>
+</body>
+</html>
+
+<?php
+#--- outer_join.php ---#
+?>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Using Outer Join</title>
+<style>
+table,td,th
+{
+	padding:10px;
+	border-collapse:collapse;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border:solid #ddd 2px;
+}
+</style>
+</head>
+<body>
+<table align="center" border="1" width="100%">
+<tr><th colspan="3">Outer Left Join</th></tr>
+<tr>
+<th>ID</th>
+<th>Data</th>
+<th>Category</th>
+</tr>
+<?php
+mysql_connect("localhost","user","pass");
+mysql_select_db("dbname");
+$res=mysql_query("SELECT c.category , d.data , d.id FROM serp_categories c LEFT OUTER JOIN serp_data d ON c.cat_id=d.search_id");
+while($row=mysql_fetch_array($res))
+{
+	?>
+    <tr>
+    <td><p><?php echo $row['id']; ?></p></td>
+    <td><p><?php echo $row['data']; ?></p></td>
+    <td><p><?php echo $row['category']; ?></p></td>
+    </tr>
+    <?php
+}
+?>
+</table>
+<br />
+<table align="center" border="1" width="100%">
+<tr><th colspan="3">Outer Right Join</th></tr>
+<tr>
+<th>ID</th>
+<th>Data</th>
+<th>Category</th>
+</tr>
+<?php
+mysql_connect("localhost","user","pass");
+mysql_select_db("dbname");
+$res=mysql_query("SELECT c.category , d.data , d.id FROM serp_categories c RIGHT OUTER JOIN serp_data d ON c.cat_id=d.search_id");
+while($row=mysql_fetch_array($res))
+{
+	?>
+    <tr>
+    <td><p><?php echo $row['id']; ?></p></td>
+    <td><p><?php echo $row['data']; ?></p></td>
+    <td><p><?php echo $row['category']; ?></p></td>
+    </tr>
+    <?php
+}
+?>
+</table>
+</body>
+</html>
+
+<?php
+#--- product.php ---#
+?>
+
+<html>
+<head>
+<style>
+table,td,th
+{
+	padding:10px;
+	border-collapse:collapse;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border:solid #ddd 2px;
+}
+</style>
+</head>
+
+<body>
+<table align="center" border="1" width="100%">
+<tr>
+<th>ID</th>
+<th>Search ID</th>
+<th>Data</th>
+</tr>
+<?php
+mysql_connect("localhost","user","pass");
+mysql_select_db("dbname");
+$res=mysql_query("SELECT * FROM serp_data");
+while($row=mysql_fetch_array($res))
+{
+	?>
+    <tr>
+    <td><p><?php echo $row['id']; ?></p></td>
+    <td><p><?php echo $row['search_id']; ?></p></td>
+    <td><p><?php echo $row['data']; ?></p></td>
+    </tr>
+    <?php
+}
+?>
+</table>
+</body>
+</html>
+
+<?php
+#--- cat.php ---#
+?>
+
+<html>
+<head>
+<style>
+table,td,th
+{
+	padding:10px;
+	border-collapse:collapse;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border:solid #ddd 2px;
+}
+</style>
+</head>
+
+<body>
+<table align="center" border="1" width="100%">
+<tr>
+<th>ID</th>
+<th>User ID</th>
+<th>Category ID</th>
+<th>Keywords</th>
+<th>URL</th>
+<th>Category</th>
+<th>Provider</th>
+<th>Language</th>
+<th>Country</th>
+</tr>
+<?php
+mysql_connect("localhost","user","pass");
+mysql_select_db("dbname");
+$res=mysql_query("SELECT * FROM serp_categories");
+while($row=mysql_fetch_array($res))
+{
+	?>
+    <tr>
+    <td><p><?php echo $row['id']; ?></p></td>
+    <td><p><?php echo $row['user_id']; ?></p></td>
+    <td><p><?php echo $row['cat_id']; ?></p></td>
+    <td><p><?php echo $row['kws']; ?></p></td>
+    <td><p><?php echo $row['url']; ?></p></td>
+    <td><p><?php echo $row['category']; ?></p></td>
+    <td><p><?php echo $row['provider']; ?></p></td>
+    <td><p><?php echo $row['language']; ?></p></td>
+    <td><p><?php echo $row['country']; ?></p></td>    
+    </tr>
+    <?php
+}
+?>
+</table>
+</body>
+</html>
+
+<?php
+#--- index.php ---#
+?>
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+table,td,th
+{
+	padding:10px;
+	border-collapse:collapse;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border:solid #ddd 2px;
+}
+</style>
+</head>
+<body>
+<table align="center" border="1" width="100%">
+<tr>
+<th>ID</th>
+<th>Serp data</th>
+<th>Category name</th>
+</tr>
+<?php
+mysql_connect("localhost","user","pass");
+mysql_select_db("dbname");
+$res=mysql_query("SELECT c.* , d.* FROM serp_categories c,serp_data d WHERE c.cat_id=d.search_id");
+while($row=mysql_fetch_array($res))
+{
+	?>
+    <tr>
+    <td><p><?php echo $row['id']; ?></p></td>
+    <td><p><?php echo $row['data']; ?></p></td>
+    <td><p><?php echo $row['category']; ?></p></td>
+    </tr>
+    <?php
+}
+?>
+</table>
+</body>
+</html>
+
+
+ 	
