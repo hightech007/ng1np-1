@@ -78,7 +78,7 @@ function insert_data($data) {
 </form>
 
 <?php
-echo "<h2>Your Input:</h2>";
+echo "<h2>Output:</h2>";
 echo $user_id;
 echo "<br>";
 echo $url;
