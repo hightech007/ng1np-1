@@ -61,7 +61,7 @@ function insert_data($data) {
    User ID: <input type="text" name="user_id" value="<?php echo $user_id;?>">
    <span class="error">* <?php echo $user_idErr;?></span>
    <br><br>
-   URL: <input type="text" name="url" cols="40" value="<?php echo $url;?>">
+   URL: <input type="text" name="url" value="<?php echo $url;?>">
    <span class="error">* <?php echo $urlErr;?></span>
    <br><br>
    Keywords (comma separated):<br><br>
