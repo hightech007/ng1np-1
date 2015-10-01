@@ -1,0 +1,92 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body> 
+
+<?php
+
+$user_id = $url = $kws = $provider = "";
+$user_idErr = $urlErr = $kwsErr = $providerErr = "";
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   
+    //user id
+	if (!filter_var($_POST["user_id"], FILTER_VALIDATE_INT) === false) {
+     	$user_id = insert_data($_POST["user_id"]);
+	} else {
+     	$user_idErr = "Only integers are allowed"; 
+	}
+
+    //url
+	if (!filter_var(($_POST["url"]), FILTER_VALIDATE_URL) === false) {
+    	$url = insert_data($_POST["url"]);
+	} else {
+    	$urlErr = "Enter valid URL"; 
+	}
+
+    //kws
+	if (!filter_var(($_POST["kws"]), FILTER_SANITIZE_STRING) === false) {
+    	$kws = insert_data($_POST["kws"]);
+	} else {
+    	$kwsErr = "Enter Keywords"; 
+	}
+
+    //provider
+	if (!filter_var(($_POST["provider"]), FILTER_VALIDATE_URL) === false) {
+    	$provider = insert_data($_POST["provider"]);
+	} else {
+    	$providerErr = "Enter valid Provider URL"; 
+	}
+
+
+}
+
+function insert_data($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+}
+?>
+
+<h2>Insert User ID, Keywords, URL and Provider</h2>
+<p><span class="error">* required field.</span></p>
+
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+   User ID: <input type="text" name="user_id" value="<?php echo $user_id;?>">
+   <span class="error">* <?php echo $user_idErr;?></span>
+   <br><br>
+   URL: <input type="text" name="url" cols="40" value="<?php echo $url;?>">
+   <span class="error">* <?php echo $urlErr;?></span>
+   <br><br>
+   Keywords (comma separated):<br><br>
+   <textarea name="kws" rows="5" cols="40"><?php echo $kws;?></textarea>
+   <span class="error">* <?php echo $kwsErr;?></span>
+   <br><br>
+   Provider:
+   <input type="radio" name="provider" <?php if (isset($provider) && $provider=="http://google.com") echo "checked";?>  
+   value="http://google.com">Google
+   <input type="radio" name="provider" <?php if (isset($provider) && $provider=="other") echo "checked";?>  value="other">Other
+   <span class="error">* <?php echo $providerErr;?></span>
+   <br><br>
+   <input type="submit" name="submit" value="Submit"> 
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $user_id;
+echo "<br>";
+echo $url;
+echo "<br>";
+echo $kws;
+echo "<br>";
+echo $provider;
+?>
+
+</body>
+</html>
