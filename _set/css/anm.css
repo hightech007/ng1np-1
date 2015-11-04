@@ -148,3 +148,84 @@ transform: rotate(-720deg) scale(1) skew(0deg) translate(0px);
 -o-transform: rotate(-720deg) scale(1) skew(0deg) translate(0px);
 -ms-transform: rotate(-720deg) scale(1) skew(0deg) translate(0px);
 }
+
+
+
+.h3d1 {
+transition:All 0.5299s linear;
+-webkit-transition:All 0.5299s linear;
+-moz-transition:All 0.5299s linear;
+-o-transition:All 0.5299s linear;
+transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-webkit-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-moz-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-o-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-ms-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+}
+.h3d1:hover{
+transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-moz-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-o-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-ms-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+}
+
+
+.h3d2 {
+transition:All 0.5299s linear;
+-webkit-transition:All 0.5299s linear;
+-moz-transition:All 0.5299s linear;
+-o-transition:All 0.5299s linear;
+transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-webkit-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-moz-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-o-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-ms-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+}
+.h3d2:hover{
+transform: rotate(169deg) scale(0.789) skew(1deg) translate(-1px);
+-webkit-transform: rotate(169deg) scale(0.789) skew(1deg) translate(-1px);
+-moz-transform: rotate(169deg) scale(0.789) skew(1deg) translate(-1px);
+-o-transform: rotate(169deg) scale(0.789) skew(1deg) translate(-1px);
+-ms-transform: rotate(169deg) scale(0.789) skew(1deg) translate(-1px);
+}
+
+
+.h3d3 {
+transition:All 1.4457s ease-in;
+-webkit-transition:All 1.4457s ease-in;
+-moz-transition:All 1.4457s ease-in;
+-o-transition:All 1.4457s ease-in;
+transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-webkit-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-moz-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-o-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+-ms-transform: rotate(0deg) scale(0.953) skew(1deg) translate(-1px);
+}
+.h3d3:hover{
+transform: rotate(7deg) scale(0.871) skew(-21deg) translate(-4px);
+-webkit-transform: rotate(7deg) scale(0.871) skew(-21deg) translate(-4px);
+-moz-transform: rotate(7deg) scale(0.871) skew(-21deg) translate(-4px);
+-o-transform: rotate(7deg) scale(0.871) skew(-21deg) translate(-4px);
+-ms-transform: rotate(7deg) scale(0.871) skew(-21deg) translate(-4px);
+}
+
+
+.h3d4 {
+transition:All 0.8891s ease-in;
+-webkit-transition:All 0.8891s ease-in;
+-moz-transition:All 0.8891s ease-in;
+-o-transition:All 0.8891s ease-in;
+transform: rotate(0deg) scale(0.786) skew(0deg) translate(-4px);
+-webkit-transform: rotate(0deg) scale(0.786) skew(0deg) translate(-4px);
+-moz-transform: rotate(0deg) scale(0.786) skew(0deg) translate(-4px);
+-o-transform: rotate(0deg) scale(0.786) skew(0deg) translate(-4px);
+-ms-transform: rotate(0deg) scale(0.786) skew(0deg) translate(-4px);
+}
+.h3d4:hover{
+transform: rotate(360deg) scale(0.786) skew(0deg) translate(-4px);
+-webkit-transform: rotate(360deg) scale(0.786) skew(0deg) translate(-4px);
+-moz-transform: rotate(360deg) scale(0.786) skew(0deg) translate(-4px);
+-o-transform: rotate(360deg) scale(0.786) skew(0deg) translate(-4px);
+-ms-transform: rotate(360deg) scale(0.786) skew(0deg) translate(-4px);
+}
