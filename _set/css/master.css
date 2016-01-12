@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img,iframe { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* General Style */
+body{
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	/* font-family: 'WOL_Reg','Segoe UI',Tahoma,Helvetica,sans-serif; */
+        background: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	color: #000;
+	overflow-y: scroll;
+}
+
+.btn-start-chat {
+  font-size: 26px !important;
+  padding: 8px 5px !important;
+}
+.brought-to-you-by {
+  display:none !important;
+}
+
+.ie7 body{
+	overflow:hidden;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+.holder{
+	position: relative;
+	text-align: center;
+	
+}
+.clr{
+	clear: both;
+}
+.holder p {
+	padding: 0.5%;
+	color: #4a3124;
+}
+
+section {margin-bottom:10%;}
+section a {text-decoration: underline;font-size:1.2em;width:100%;float:left;margin-top:1%;}
+section a:hover {color: #000;}
+
+.holder > header img {padding-top:1%;}
+
+.holder > header{
+	padding: 20px 30px 10px 30px;
+	margin: 0px 20px 10px 20px;
+	position: relative;
+	display: block;
+    	text-align: center;
+}
+.holder > header h1{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 35px;
+	line-height: 35px;
+	position: relative;
+	font-weight: 400;
+	color: #414141;
+    	padding: 35px 0px 5px 0px; /* padding: 0px 0px 5px 0px; */
+}
+.holder > header h1 span{
+	color: #c7957b;
+}
+.holder > header h2, p.info{
+	font-size: 17px;
+	color: #B6B6B6;
+}
+
+.holder > section h3 {
+	font-size: 18px;
+	color: #4a3124;
+}
+
+.opacity {background:#fbf8f4;opacity:0.7;filter:Alpha(opacity=70);}
+.left-art {width:58%;float:left;padding:1%; text-align:left;margin-bottom:1%;}
+.right-art {width:38%;float:right;padding:1%; text-align:left;margin-bottom:1%;}
+
+.rss{
+	width: /* 400px */ 80%;
+	margin: 30px auto 120px auto;
+	text-align:justify;
+}
+
+.button {padding:0.4%;padding-left:1%;padding-right:1%;}
+/* Header Style */
+.top {
+	/*font-ffont-size: 1.3em;amily:'Arial Narrow', Arial, sans-serif;*/
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	font-family: 'BebasNeueRegular';
+	line-height: 24px;
+	font-size: 18px;
+	width: 100%;
+	/*background: #454545;*/
+	background-color: #3c404b;
+	background: -webkit-linear-gradient(#56585D, #2F3034);
+	background: -moz-linear-gradient(#56585D, #2F3034);
+	background: linear-gradient(#56585D, #2F3034);
+	border-bottom: 1px solid #000;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: fixed;
+}
+.top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #ddd;
+	display: block;
+	float: left;
+}
+.top a:hover{
+	color: #00bcf2;
+}
+.top span.right{
+	float: right;
+}
+.top span.right a{
+	float: none;
+	display: inline;
+}
+footer { background:#444; color:#fff;
+	z-index:1001;
+	width: 100%; 
+	bottom:0px; 
+	position:fixed;
+}
+
+form select {padding:0.5%;}
+
+.wapi legend {width:98%;padding:1%;margin:0;}
+.wapi input {width:58%;padding:1%;margin:0 auto;}
+ 
+#livesearch a:hover {color:orangered;}
+
+#sthoverbuttons #sthoverbuttonsMain {
+  border: none !important;
+  position: relative !important;
+  z-index: 1000000 !important;
+  width: 30px !important;
+  padding: 8px !important;
+}
+

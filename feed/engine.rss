@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>engine up</title>
+  <link>./default</link>
+  <description>Open source engine</description>
+  <item>
+    <title>CNN Top News - Fresh CNN Top News</title>
+    <link>./cnn-top</link>
+    <image>media/ng1np.png</image>
+    <description>Top Stories from CNN</description>
+  </item>
+  <item>
+    <title>CNN Worldc News - Fresh News from World</title>
+    <link>./cnn-world</link>
+    <image>media/ng1np.png</image>
+    <description>World News from CNN</description>
+  </item>
+  <item>
+    <title>CNN Africa News - Fresh News from World</title>
+    <link>./cnn-africa</link>
+    <image>media/ng1np.png</image>
+    <description>Africa News from CNN</description>
+  </item>
+  <item>
+    <title>BBC Top News - Fresh BBC Top News</title>
+    <link>./bbc-top</link>
+    <image>media/ng1np.png</image>
+    <description>Top Stories from BBC</description>
+  </item>
+  <item>
+    <title>RSS Engine</title>
+    <link>./rss</link>
+    <image>media/ng1np.png</image>
+    <description>RSS FEED</description>
+  </item>
+  <item>
+    <title>EXT: RSS EXTREME PRO HOSTING</title>
+    <link>http://www.extreme-prohosting.com/info/feed/</link>
+    <image>media/ng1np.png</image>
+    <description>RSS FEED</description>
+  </item>
+</channel>
+
+</rss>

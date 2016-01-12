@@ -1,0 +1,1 @@
+[23-Apr-2015 06:59:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/antister/public_html/7/contact/contact-app/common.php:250) in /home/antister/public_html/7/contact/contact-app/js/init.php on line 8

@@ -1,0 +1,58 @@
+function toggle(id) {
+  'use strict';
+  var e = document.getElementById(id);
+
+  if (e.style.display == '')
+    e.style.display = 'none';
+  else
+    e.style.display = '';
+}
+
+function toggle2(id, link) {
+  'use strict';
+  var e = document.getElementById(id);
+
+  if (e.style.display == '') {
+    e.style.display = 'none';
+    link.innerHTML = 'dw';
+  } else {
+    e.style.display = '';
+    link.innerHTML = 'up';
+  }
+}
+
+function getSelect(s) {
+  'use strict';
+  return s.options[s.selectedIndex].value
+}
+
+function showResult(str){if (str.length==0){document.getElementById("livesearch").innerHTML=""; 
+document.getElementById("livesearch").style.border="0px"; return;} if (window.XMLHttpRequest) 
+{xmlhttp=new XMLHttpRequest();} else {xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");} 
+xmlhttp.onreadystatechange=function() {if (xmlhttp.readyState==4 && xmlhttp.status==200){
+document.getElementById("livesearch").innerHTML=xmlhttp.responseText; 
+document.getElementById("livesearch").style.border="0px solid #414141";}} 
+xmlhttp.open("GET","_set/php/lsearch.php?q="+str,true); xmlhttp.send(); }
+
+document.createElement("section");
+document.createElement("article");
+document.createElement("footer");
+document.createElement("header");
+document.createElement("hgroup");
+document.createElement("nav");
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+function cs()
+	{document.body.style.background="#dcdcdc";}
+function cs2()
+	{document.body.style.background="#212121";}
+function capitalize()
+	{document.getElementById("cap").style.textTransform="capitalize";}
+
